@@ -1,0 +1,101 @@
+%xelatex 或 pdflatex 编译
+%导言区
+\documentclass[UTF8]{article} %UTF8编码
+\input{preface.tex}
+
+%标题页设置
+\title{
+	A homework template
+}
+\author{Meiting Wang\thanks{Meiting Wang, Email: wangmeiting92@gmail.com}}
+\date{\today}
+
+
+
+
+%正文区
+\begin{document}
+\maketitle
+
+\begin{enumerate}
+    \item \lipsum[1][1-3] %problem boundary--------------------------------------------------------------------
+    \begin{enumerate}
+        \item \lipsum[2][2-3]
+        
+        The solution for this section will be as follows ...
+        
+        \item \lipsum[2][2-3]
+        
+        \begin{lemma}
+            \lipsum[3][2-3]
+            \[ a^2 + b^2 = c^2 \]
+            The equation above depict a fact that ...
+        \end{lemma}
+        
+        \begin{lemma}[xxx]\label{lemma:xxx}
+            \lipsum[3][2-3]
+        \end{lemma}
+        
+        As the Lemma \ref{lemma:xxx} said, ...
+        
+        \item \lipsum[2][2-3]
+        
+        \begin{theorem}
+            \lipsum[1][1-4]
+        \end{theorem}
+        
+        \begin{proof}
+            \lipsum[3][1-3]
+        \end{proof}
+        
+    \end{enumerate}
+    \item \lipsum[1][1-3] %problem boundary--------------------------------------------------------------------
+    \begin{enumerate}
+        \item \lipsum[2][2-3]
+        
+        \lipsum[1][1-8]
+        
+        \item \lipsum[2][2-3]
+        
+        \begin{table}[H]
+        	\centering
+        	\caption{Descriptive statistics}\label{tab:stat}
+        	\begin{tabular}{l*{5}{>{$}c<{$}}}
+        		\toprule
+        		&\text{count}&\text{mean}&\text{sd}&\text{min}&\text{max}\\
+        		\midrule
+        		price       &          74&    6165.25&    2949.49&        3291&       15906\\
+        		mpg         &          74&     21.29&    5.78&          12&          41\\
+        		weight      &          74&    3019.45&    777.19&        1760&        4840\\
+        		rep78       &          69&    3.4057&    .98&           1&           5\\
+        		\bottomrule
+        	\end{tabular}
+        \end{table}
+        
+        As table \ref{tab:stat} shows, ...
+        
+        \begin{figure}[htbp]
+        	\centering
+        	\includegraphics[width=0.5\textwidth]{1.jpg}
+        	\caption{Beautiful scenery} \label{fig:scenery}
+        \end{figure}
+        
+        As the figure \ref{fig:scenery} shows, ...
+        
+        \item \lipsum[2][2-3]
+        
+        \begin{gather}
+            a + b = c \\
+            a + b = c \label{eq:abc} \\
+            a + b = c 
+        \end{gather}
+        
+        As the equation \eqref{eq:abc} shows, ...
+    \end{enumerate}
+\end{enumerate}
+
+
+
+
+
+\end{document}
